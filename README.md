@@ -14,7 +14,7 @@ This repo is the PyTorch codes for "Improving Unsupervised Image Clustering With
 - pillow == 7.1.2
 
 ## Overall model architecture ##
-<center><img src="./figure/model_arch.pdf"> </center>
+<center><img src="./figure/model_arch.png"> </center>
 
 ## Usage ##
 ```
@@ -49,4 +49,4 @@ Currently, we support the pretrained model for our model. We used the pretrained
 
 ## Experiment ##
 We found that our algorithm can bring better calibrations than existing models.
-<img src="./figure/calibration.pdf" width="700" height="150">
+<img src="./figure/calibration.png" >
