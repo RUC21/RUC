@@ -49,4 +49,4 @@ Currently, we support the pretrained model for our model. We used the pretrained
 
 ## Experiment ##
 We found that our algorithm can bring better calibrations than existing models.
-<img src="./fig/calibration.pdf" width="700" height="150">
+<img src="./figure/calibration.pdf" width="700" height="150">
