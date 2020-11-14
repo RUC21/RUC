@@ -43,9 +43,9 @@ optional arguments:
 Currently, we support the pretrained model for our model. We used the pretrained SCAN and SimCLR model from SCAN github.
 | Dataset           | Download link |
 |-------------------|---------------| 
-|CIFAR-10           | [Download]()  |
-|CIFAR-20           | [Download]()  |
-|STL-10             | [Download]()  |
+|CIFAR-10           | [Download](https://drive.google.com/file/d/16Wcby-8etsTPPIlsQb9oluk3NN8kSmCX/view?usp=sharing)  |
+|CIFAR-20           | [Download](https://drive.google.com/file/d/118SIQ3YBx1y9Uoq-Wo3FyW9iYELKjcQJ/view?usp=sharing)  |
+|STL-10             | [Download](https://drive.google.com/file/d/1mHLkC2JrKsnMswIeT6wKO4fV97DbTHtJ/view?usp=sharing)  |
 
 ## Experiment ##
 We found that our algorithm can bring better calibrations than existing models.
