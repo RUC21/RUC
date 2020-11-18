@@ -14,7 +14,7 @@ This repo is the PyTorch codes for "Improving Unsupervised Image Clustering With
 - pillow == 7.1.2
 
 ## Overall model architecture ##
-<center><img src="./figure/model_arch.png"> </center>
+<center><img src="./figure/model_arch.PNG"> </center>
 
 ## Usage ##
 ```
