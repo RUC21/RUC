@@ -1,9 +1,25 @@
 # Improving Unsupervised Image Clustering With Robust Learning #
 This repo is the PyTorch codes for "Improving Unsupervised Image Clustering With Robust Learning (RUC)"
 ## Highlight ##
-* Our proposed algorithm RUC aids existing unsupervised clustering models via retraining and helps to avoid overconfident predictions.
-* The unique retraining process of RUC helps existing models outperform baselines. (STL-10 : 86.7%, CIFAR-10 : 90.3%, CIFAR-20 : 54.3%)
-* The proposed training process can adjust the model confidence with better calibrations.
+1. RUC is an add-on module to enhance the performance of any off-the-shelf unsupervised learning algorithms. RUC is inspired by robust learning. It first divides clustered data points into clean and noisy set, then refine the clustering results. With RUC, state-of-the-art unsupervised clustering methods; SCAN and TSUC showed showed huge performance improvements. (STL-10 : 86.7%, CIFAR-10 : 90.3%, CIFAR-20 : 54.3%)
+
+<p align="center">
+  <img src="./figure/main_result.png" /> </center>
+</p>
+
+2. Prediction results of existing unsupervised learning algorithms were overconfident.  RUC can make the prediction of existing algorithms softer with better calibration.
+<p align="center">
+  <img src="./figure/confidence.png" width = 600> </center>
+</p>
+<p align="center">
+  <img src="./figure/calibration.png" width = 900> </center> 
+</p>
+
+3. Robust to adversarially crafted samples. ERM-based unsupervised clustering algorithms can be prone to adversarial attack. Adding RUC to the clustering models improves robustness against adversarial noise.
+
+<p align="center">
+  <img src="./figure/attack.png" width = 600> </center> 
+</p>
 
 ## Required packages ##
 - python == 3.6.10
@@ -46,7 +62,3 @@ Currently, we support the pretrained model for our model. We used the pretrained
 |CIFAR-10           | [Download](https://drive.google.com/file/d/16Wcby-8etsTPPIlsQb9oluk3NN8kSmCX/view?usp=sharing)  |
 |CIFAR-20           | [Download](https://drive.google.com/file/d/118SIQ3YBx1y9Uoq-Wo3FyW9iYELKjcQJ/view?usp=sharing)  |
 |STL-10             | [Download](https://drive.google.com/file/d/1mHLkC2JrKsnMswIeT6wKO4fV97DbTHtJ/view?usp=sharing)  |
-
-## Experiment ##
-We found that our algorithm can bring better calibrations than existing models.
-<img src="./figure/calibration.png" >
